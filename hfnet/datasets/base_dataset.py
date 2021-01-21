@@ -1,5 +1,7 @@
 from abc import ABCMeta, abstractmethod
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 from hfnet.utils.tools import dict_update
 
