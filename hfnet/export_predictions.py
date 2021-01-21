@@ -67,3 +67,4 @@ if __name__ == '__main__':
             name = data['name'].decode('utf-8')
             Path(base_dir, Path(name).parent).mkdir(parents=True, exist_ok=True)
             np.savez(Path(base_dir, '{}.npz'.format(name)), **predictions)
+#python3 hfnet/export_predictions.py hfnet/configs/superpoint_export_aachen_db.yaml superpoint/aachen --keys keypoints,scores,local_descriptor_map 
